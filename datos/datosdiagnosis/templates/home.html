@@ -1,0 +1,27 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4">
+          <h2 data-aos="fade-up">Respitory Disease Diagnoser</h2>
+          <blockquote data-aos="fade-up" data-aos-delay="100">
+            <p>Our app is a revolutionary tool that can diagnose respiratory problems by running an audio file through a machine learning model. All you need to do is record your breathing sound for a few seconds and upload it to our app. </p>
+          </blockquote>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="/about" class="btn-get-started">Learn more</a>
+            <a href="/diagnoser" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-phone-vibrate"></i><span>Start Diagnosis</span></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  {% endblock %}

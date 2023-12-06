@@ -1,0 +1,135 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <main id="main">
+    
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{% static 'datosdiagnosis/assets/img/about-header.jpg' %}');">
+      <div class="container position-relative d-flex flex-column align-items-center">
+
+        <h2>About Us</h2>
+       
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Why Choose Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Why datos?</h2>
+
+        </div>
+
+        <div class="row g-0" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-xl-5 img-bg" style="background-image: url('{% static 'datosdiagnosis/assets/img/why-us-bg.jpg' %}')"></div>
+          <div class="col-xl-7 slides  position-relative">
+
+            <div class="slides-1 swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Let's grow your business together</h3>
+                    <h4 class="mb-3">We thrive on a shared business model</h4>
+                    <p>Your growth at datos is our number one priority. We ensure this through the intergration of the latest technologies to fast track your business' growth.</p>
+                  </div>
+                </div><!-- End slide item -->
+
+                <div class="swiper-slide">
+                  <div class="item">
+                    <h3 class="mb-3">Technolgy solutions</h3>
+                    <h4 class="mb-3">Automation is the future</h4>
+                    <p>We help unlock your teams potential by automating the boring tasks, allowing you and your team to focus on more meaningful parts of your business.</p>
+                  </div>
+                </div><!-- End slide item -->
+
+            
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Choose Us Section -->
+
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Team</h2>
+
+        </div>
+        <style>
+          /* Add this to the parent element of the col-lg-3 and col-md-6 divs */
+          .parent {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+          }
+      
+          /* Add this to the col-lg-3 and col-md-6 divs */
+          .col-lg-3, .col-md-6 {
+            margin: 10px;
+          }
+        </style>
+        <div class="row gy-4">
+          <div class="parent">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'datosdiagnosis/assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Timothy Chimfwembe</h4>
+                <span>Software Engineer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="{% static 'datosdiagnosis/assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Prince Okon</h4>
+                <span>Data Scientist</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+      </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+
+  {% endblock %}
